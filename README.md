@@ -39,7 +39,7 @@ Open your terminal and navigate to the folder you want the project to be and ent
 
 ```
 $ git clone -b develop https://github.com/Aijeyomah/Book-club
-$ cd PropertyPro-Lite
+$ cd book-club
 $ npm install
 ```
 
