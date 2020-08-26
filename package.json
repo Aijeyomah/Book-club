@@ -1,0 +1,58 @@
+{
+  "name": "book-club",
+  "version": "1.0.0",
+  "description": "A platform where people upload add books ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js .",
+    "start": "node -r esm ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aijeyomah/Book-club.git"
+  },
+  "author": "Eti Ijeoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aijeyomah/Book-club/issues"
+  },
+  "homepage": "https://github.com/Aijeyomah/Book-club#readme",
+  "dependencies": {
+    "@hapi/formula": "^3.0.0",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "@sendgrid/mail": "^7.2.4",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi-password-complexity": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.3.2",
+    "socket.io": "^2.3.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "db-migrate": "^0.11.11",
+    "db-migrate-pg": "^1.2.2",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4"
+  }
+}
