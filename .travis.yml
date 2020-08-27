@@ -13,7 +13,7 @@ services:
   - postgresql
   env:
   global:
-     - CC_TEST_REPORTER_ID=0af239fa6a55520e8cefc4dcde153ff7293ad506c101d9c14cc8b8eaa10dadc7
+     - CC_TEST_REPORTER_ID= 0af239fa6a55520e8cefc4dcde153ff7293ad506c101d9c14cc8b8eaa10dadc7
 
 before_script:
   - psql -c "CREATE DATABASE testing_db;" -U postgres
@@ -21,7 +21,7 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
-script: 
+  script:
   - npm run migrations
   - npm test
   after_script:

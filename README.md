@@ -1,3 +1,8 @@
+[![Coverage Status](https://coveralls.io/repos/github/Aijeyomah/Book-club/badge.svg?branch=develop)](https://coveralls.io/github/Aijeyomah/Book-club?branch=develop)
+[![CodeFactor](https://www.codefactor.io/repository/github/aijeyomah/book-club/badge)](https://www.codefactor.io/repository/github/aijeyomah/book-club)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c3afcd24a7704ac72efc/maintainability)](https://codeclimate.com/github/Aijeyomah/Book-club/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/c3afcd24a7704ac72efc/test_coverage)](https://codeclimate.com/github/Aijeyomah/Book-club/test_coverage)
+
 # Book-club
 Book club is a platform where people upload add books 
 
@@ -43,7 +48,3 @@ $ cd book-club
 $ npm install
 ```
 
- [![Coverage Status](https://coveralls.io/repos/github/Aijeyomah/Book-club/badge.svg?branch=develop)](https://coveralls.io/github/Aijeyomah/Book-club?branch=develop)
-[![CodeFactor](https://www.codefactor.io/repository/github/aijeyomah/book-club/badge)](https://www.codefactor.io/repository/github/aijeyomah/book-club)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c3afcd24a7704ac72efc/maintainability)](https://codeclimate.com/github/Aijeyomah/Book-club/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c3afcd24a7704ac72efc/test_coverage)](https://codeclimate.com/github/Aijeyomah/Book-club/test_coverage)
