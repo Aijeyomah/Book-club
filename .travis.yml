@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - "v12.18.1"
+  
+install:
+- npm install
+
+env:
+  global:
+     - CC_TEST_REPORTER_ID= 0af239fa6a55520e8cefc4dcde153ff7293ad506c101d9c14cc8b8eaa10dadc7
+
+script:
+  - npm test
+  
+services:
+  - postgresql
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+cache:
+  directories:
+    - node_modules
+after_success:
+  - npm run coveralls
+  - npm run report-coverage
