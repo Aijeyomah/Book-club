@@ -11,7 +11,6 @@ env:
      - CC_TEST_REPORTER_ID= 0af239fa6a55520e8cefc4dcde153ff7293ad506c101d9c14cc8b8eaa10dadc7
 
 script:
-  - npm run migrations
   - npm test
   
 services:
