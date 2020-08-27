@@ -2,6 +2,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/aijeyomah/book-club/badge)](https://www.codefactor.io/repository/github/aijeyomah/book-club)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c3afcd24a7704ac72efc/maintainability)](https://codeclimate.com/github/Aijeyomah/Book-club/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c3afcd24a7704ac72efc/test_coverage)](https://codeclimate.com/github/Aijeyomah/Book-club/test_coverage)
+[![Build Status](https://www.travis-ci.com/Aijeyomah/Book-club.svg?branch=develop)](https://www.travis-ci.com/Aijeyomah/Book-club)
 
 # Book-club
 Book club is a platform where people upload add books 
