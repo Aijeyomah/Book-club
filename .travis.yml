@@ -8,7 +8,7 @@ install:
 
 env:
   global:
-     - CC_TEST_REPORTER_ID= 0af239fa6a55520e8cefc4dcde153ff7293ad506c101d9c14cc8b8eaa10dadc7
+     - CC_TEST_REPORTER_ID=0af239fa6a55520e8cefc4dcde153ff7293ad506c101d9c14cc8b8eaa10dadc7
 
 script:
   - npm test
