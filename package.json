@@ -4,7 +4,7 @@
   "description": "A platform where people upload add books ",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha -r esm test/**/*.test.js",
+    "test": "nyc --reporter=html --reporter=text mocha -r esm test/**/*.test.js",
     "test-watch": "nodemon --exec npm test",
     "lint": "eslint --fix --ext .js .",
     "start": "node -r esm .",
