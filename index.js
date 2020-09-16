@@ -1,3 +1,10 @@
-const add = (a, b) => a + b;
+import express from 'express';
+import config, { appConfig } from './config';
+import initLogger from './config/logger';
 
-export default add;
+const app = express();
+const winstonLogger = initLogger(config.NODE_ENV);
+// sets logger as a global variable
+global.logger = winstonLogger;
+
+appConfig(app);

@@ -1,0 +1,31 @@
+version: "3"
+
+services: 
+    app:
+        build: .
+        volumes: 
+            - .:/usr/app
+            - /usr/app/node_modules
+        ports: 
+            - 3000:5080
+        env_file: .env
+        environment: 
+            - REDIS_URL=store://memory
+            - BOOK_CLUB_POSTGRES_DEV_URL=postgres://postgres:{POSTGRES_PASSWORD}@database:5432/book_club_dev
+        command:
+            [
+                "bash",
+                "-c",
+                "while !</dev/tcp/database/5432; do sleep 1; done; npm run lint && npm start"
+            ]
+        depends_on: 
+            - database
+            - store
+
+    database:
+        image: postgres
+        env_file: .env
+
+    store:
+        image: "redis:alpine"
+        container_name: memory
